@@ -1,5 +1,5 @@
 {% set name = "realalg" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/realalg-{{ version }}.tar.gz
-  sha256: 049b8ab342484fb596fadef7304dffac1322f43f1944130ca48d49c56b42144f
+  sha256: fb48ac2916fee4df416889777d4e06f1bd83cb7ce7e00bf8228d9e09f0c08463
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
